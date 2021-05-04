@@ -16,6 +16,9 @@ sed -i 's/192.168.1.1/192.168.20.200/g' package/base-files/files/bin/config_gene
 # 增加微信推送姬
 # git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
 
+# 增加关机插件
+git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
+
 # 增加dockerman
 #rm -rf package/lean/luci-app-dockerman/.github
 #rm -rf package/lean/luci-app-dockerman/doc
