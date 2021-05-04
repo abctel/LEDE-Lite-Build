@@ -18,6 +18,8 @@ sed -i 's/192.168.1.1/192.168.20.200/g' package/base-files/files/bin/config_gene
 
 # 增加关机插件
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
+# 增加Chinadns-NG插件
+git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
 
 # 增加dockerman
 #rm -rf package/lean/luci-app-dockerman/.github
