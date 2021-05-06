@@ -12,6 +12,7 @@
 
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.20.200/g' package/base-files/files/bin/config_generate
+sed -i 's/\$\(INSTALL\_DIR\) \$\(1\)\/usr\/lib\/lua\/luci\/i18n/a \$\(INSTALL\_BIN\) \.\/root\/etc\/init.d\/AdGuardHome \$\(1\)\/etc\/init\.d\/AdGuardHome/g' Package/luci-app-adguardhome/Makefile
 
 # 增加微信推送姬
 # git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
