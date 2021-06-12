@@ -30,6 +30,14 @@
 
 1. <https://github.com/esirplayground/luci-app-poweroff>
 
+## 更新说明
+
+- 2021/06/12
+
+ 1. 第一补全说明,懒得写啦,功能就那几个而已.
+ 2. 下次一定
+
+
 ## 已知问题
 
 AdGuardHome 无法更新核心,重复提示:A task is already running.
