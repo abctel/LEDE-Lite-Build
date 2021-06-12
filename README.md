@@ -2,18 +2,20 @@
 
 本固件订制原则是功能最小化，稳定运行为主，尤其适合作为单网口旁路有，虚拟机旁路有运行使用，同时也可作为对7x24稳定运行的朋友使用。
 
-固件仅在原版lede基础上精简、添加日常常用到插件：
-1.passwall       （翻墙）
-2.AdGuardHome     (广告过滤)
-3.SmartDNS       （DNS加速）
-4.微信推送姬      （运行状态通知）
-5.动态DNS        （IP绑定）
-6.网络唤醒       （内网设备启动）
-7.KMS服务器      （内网windows家族软件激活）
-8.TTYD终端       （超级方便的web ssh)
+- 固件仅在原版lede基础上精简、添加日常常用到插件：
 
-使用的主题：
-opentomcat
+1. passwall       （翻墙）
+2. AdGuardHome     (广告过滤)
+3. SmartDNS       （DNS加速）
+4. 微信推送姬      （运行状态通知）
+5. 动态DNS        （IP绑定）
+6. 网络唤醒       （内网设备启动）
+7. KMS服务器      （内网windows家族软件激活）
+8. TTYD终端       （超级方便的web ssh)
+
+- 使用的主题：
+
+1. opentomcat
 
 ## 插件源
 
@@ -79,6 +81,7 @@ AdGuardHome 无法更新核心,重复提示:A task is already running.
   ```
 
 ## 鸣谢
+
 感谢以下开源作者的开源项目以及详尽的文档,排名不分先后.
 [P3TERX](https://github.com/P3TERX)
 [coolsnowwolf](https://github.com/coolsnowwolf)
