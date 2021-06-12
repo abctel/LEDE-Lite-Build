@@ -21,13 +21,14 @@
 
 为保证固件的绝对安全，本固件只使用lean's作者、社区高度认可插件包、源头作者开源的插件.
 
-kenzok8的插件包
-<https://github.com/kenzok8/openwrt-packages>
+- kenzok8的插件包
 
-<https://github.com/kenzok8/small>
+1. <https://github.com/kenzok8/openwrt-packages>
+2. <https://github.com/kenzok8/small>
 
-esirplayground的关机插件
-<https://github.com/esirplayground/luci-app-poweroff>
+- esirplayground的关机插件
+
+1. <https://github.com/esirplayground/luci-app-poweroff>
 
 ## 已知问题
 
