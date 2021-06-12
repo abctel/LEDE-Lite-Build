@@ -23,6 +23,7 @@
 
 kenzok8的插件包
 <https://github.com/kenzok8/openwrt-packages>
+
 <https://github.com/kenzok8/small>
 
 esirplayground的关机插件
@@ -83,9 +84,15 @@ AdGuardHome 无法更新核心,重复提示:A task is already running.
 ## 鸣谢
 
 感谢以下开源作者的开源项目以及详尽的文档,排名不分先后.
+
 [P3TERX](https://github.com/P3TERX)
+
 [coolsnowwolf](https://github.com/coolsnowwolf)
+
 [kenzok8](https://github.com/kenzok8)
+
 [Nick Peng](https://github.com/pymumu)
+
 [tty228](https://github.com/tty228)
+
 [Harry Gabriel](https://github.com/ozon)
