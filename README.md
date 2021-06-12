@@ -40,19 +40,22 @@
 
 ## 已知问题
 
-AdGuardHome 无法更新核心,重复提示:A task is already running.
-解决方法:
-1.确认路由器是否联网成功.
+- AdGuardHome 无法更新核心,重复提示:A task is already running.
+
+  解决方法:
+
+1. 确认路由器是否联网成功.
   通过 网络 -> 网络诊断 -> NSLOOKUP 按钮是否能够获取到openwrt.org的解析地址判断.
 
-2.多次点击更新按钮依然出现 A task is already running. 是因为部分机型在代码中 check_if_already_running 检测机制被卡住造成.
-只需通过TTYD终端插件通过以下方式即可:
+2. 多次点击更新按钮依然出现 A task is already running. 是因为部分机型在代码中 check_if_already_running 检测机制被卡住造成.
 
-  1. 命令 cd /usr/share/AdGuardHome
-  2. 命令 vi update_core.sh
-  3. 按键盘i键进入编译模式
-  4. 将以下代码注意掉(注释方法为行首添加#)
-  注释掉内容页最上方的check_if_already_running函数
+> 只需通过TTYD终端插件通过以下方式即可:
+>
+>  1. 命令 cd /usr/share/AdGuardHome
+>  2. 命令 vi update_core.sh
+>  3. 按键盘i键进入编译模式
+>  4. 将以下代码注意掉(注释方法为行首添加#)
+>  注释掉内容页最上方的check_if_already_running函数
 
   ```shell
   #!/bin/bash
@@ -80,7 +83,7 @@ AdGuardHome 无法更新核心,重复提示:A task is already running.
   }
   ```
 
-注释掉内容页最下方Main函数中的check_if_already_running即可
+> 注释掉内容页最下方Main函数中的check_if_already_running即可
 
   ```shell
   main(){  
