@@ -49,15 +49,14 @@
 
 2. 多次点击更新按钮依然出现 A task is already running. 是因为部分机型在代码中 check_if_already_running 检测机制被卡住造成.
 
-> 只需通过TTYD终端插件通过以下方式即可:
->
->  1. 命令 cd /usr/share/AdGuardHome
->  2. 命令 vi update_core.sh
->  3. 按键盘i键进入编译模式
->  4. 将以下代码注意掉(注释方法为行首添加#)
->  注释掉内容页最上方的check_if_already_running函数
-
   ```shell
+  只需通过TTYD终端插件通过以下方式即可:
+  1. 命令 cd /usr/share/AdGuardHome
+  2. 命令 vi update_core.sh
+  3. 按键盘i键进入编译模式
+  4. 将以下代码注意掉(注释方法为行首添加#)
+  注释掉内容页最上方的check_if_already_running函数
+
   #!/bin/bash
   PATH="/usr/sbin:/usr/bin:/sbin:/bin"
   binpath=$(uci get AdGuardHome.AdGuardHome.binpath)
@@ -81,11 +80,10 @@
         [ "$1" == "1" ] && (opkg install curl ; check_wgetcurl 2 ; return)
         echo error curl and wget && EXIT 1
   }
-  ```
 
-> 注释掉内容页最下方Main函数中的check_if_already_running即可
 
-  ```shell
+  注释掉内容页最下方Main函数中的check_if_already_running即可
+
   main(){  
         #check_if_already_running                                       
         check_latest_version
