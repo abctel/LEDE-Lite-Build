@@ -12,15 +12,25 @@
 
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.20.200/g' package/base-files/files/bin/config_generate
-sed -i 's/\$\(INSTALL\_DIR\) \$\(1\)\/usr\/lib\/lua\/luci\/i18n/a \$\(INSTALL\_BIN\) \.\/root\/etc\/init.d\/AdGuardHome \$\(1\)\/etc\/init\.d\/AdGuardHome/g' package/feeds/kenzo/luci-app-adguardhome/Makefile
-
-# 增加微信推送姬
-# git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
 
 # 增加关机插件
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
+
 # 增加Chinadns-NG插件
 git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
+
+
+# 配置定制
+mkdir abctel
+git clone https://github.com/abctel/LEDE-Firmware-Config.git abctel/config
+
+mkdir package/feeds/kenzo/luci-app-smartdns/root/etc/smartdns
+mv -f abctel/config/custom.conf package/feeds/kenzo/luci-app-smartdns/root/etc/smartdns/custom.conf
+mkdir package/feeds/kenzo/luci-app-smartdns/root/etc/config
+mv -f abctel/config/smartdns package/feeds/kenzo/luci-app-smartdns/root/etc/config/smartdns
+mv -f abctel/config/AdGuardHome.yaml package/feeds/kenzo/luci-app-adguardhome/root/etc/config/AdGuardHome.yaml
+mv -f abctel/config/update_core.sh package/feeds/kenzo/luci-app-adguardhome/root/usr/share/AdGuardHome/update_core.sh
+mv -f abctel/config/AdGuardHome_template.yaml package/feeds/kenzo/luci-app-adguardhome/root/usr/share/AdGuardHome/AdGuardHome_template.yaml
 
 # 增加dockerman
 #rm -rf package/lean/luci-app-dockerman/.github
@@ -35,5 +45,6 @@ git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
 
 # 删除老argon主题
 # rm -rf package/lean/luci-theme-argon
+
 # 拉取argon主题
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
