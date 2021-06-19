@@ -31,7 +31,8 @@
 1. <https://github.com/esirplayground/luci-app-poweroff>
 
 ## 更新说明
-
+- 2021/06/19
+ 1. 继续修复ADG核心更新失败的问题。
 - 2021/06/18
  1. 尝试集成adg，smartdns配置信息，争取做到开箱即用。
 
