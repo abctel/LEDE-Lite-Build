@@ -17,7 +17,11 @@ sed -i 's/192.168.1.1/192.168.100.200/g' package/base-files/files/bin/config_gen
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/uci-app-poweroff
 
 # 增加Chinadns-NG插件
-git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
+git clone https://github.com/abctel/openwrt-chinadns-ng package/abctel/luci-app-chinadns-ng
+# 增加dnscrypt-proxy2插件并替换默认插件
+git clone https://github.com/abctel/dnscrypt-proxy2 abctel/dnscrypt-proxy2
+rm -rf feeds/packages/net/dnscrypt-proxy2/*
+mv -f abctel/dnscrypt-proxy2/* feeds/packages/net/dnscrypt-proxy2/
 
 # 配置定制
 mkdir abctel
@@ -35,13 +39,6 @@ touch package/feeds/kenzo/luci-app-adguardhome/root/usr/bin/AdGuardHome
 mv -f abctel/config/update_core.sh package/feeds/kenzo/luci-app-adguardhome/root/usr/share/AdGuardHome/update_core.sh
 mv -f abctel/config/AdGuardHome_template.yaml package/feeds/kenzo/luci-app-adguardhome/root/usr/share/AdGuardHome/AdGuardHome_template.yaml
 
-# 增加dockerman
-#rm -rf package/lean/luci-app-dockerman/.github
-#rm -rf package/lean/luci-app-dockerman/doc
-#rm package/lean/luci-app-dockerman/LICENSE
-#rm package/lean/luci-app-dockerman/README.md
-#git clone https://github.com/lisaac/luci-app-dockerman package/lean/luci-app-dockerman
-#cp -rf package/lean/luci-app-dockerman/applications/luci-app-dockerman package/lean
 
 # 增加一套主题
 #git clone https://github.com/siropboy/luci-theme-btmod package/lean/luci-theme-btmod
