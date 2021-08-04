@@ -19,3 +19,4 @@
 #增加插件包
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i 'src-git abctel https://github.com/abctel/dnsmasq-china-list' feeds.conf.default
