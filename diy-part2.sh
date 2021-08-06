@@ -63,9 +63,9 @@ rm -rf package/abctel/passwall/chinadns-ng
 mv -f package/abctel/passwall/* package/abctel/
 rm -rf package/abctel/passwall/
 # ChinaDNS-NG
-git clone --depth=1 https://github.com/pexcn/openwrt-chinadns-ng.git package/abctel/chinadns-ng
+#git clone --depth=1 https://github.com/pexcn/openwrt-chinadns-ng.git package/abctel/chinadns-ng
 # luci-app-ChinaDNS-NG
-git clone --depth=1 -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/abctel/luci-app-chinadns-ng
+#git clone --depth=1 -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/abctel/luci-app-chinadns-ng
 # AdGuardHome
 git clone --depth=1 https://github.com/kenzok8/openwrt-packages.git package/abctel/kenzok
 mv -f package/abctel/kenzok/AdGuardHome package/abctel/
