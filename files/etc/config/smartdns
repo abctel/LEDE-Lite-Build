@@ -32,7 +32,7 @@ config smartdns
 
 config server
 	option type 'udp'
-	option ip ''
+	option ip '61.139.2.69'
 	option server_group 'mainland'
 	option blacklist_ip '0'
 	option name 'CN-ISP #1'
