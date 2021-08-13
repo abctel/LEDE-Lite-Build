@@ -5,8 +5,6 @@ config global
 	option up_china_dns 'default'
 	option tcp_proxy_mode 'chnroute'
 	option udp_proxy_mode 'chnroute'
-	option localhost_tcp_proxy_mode 'default'
-	option localhost_udp_proxy_mode 'default'
 	option loglevel 'warning'
 	option trojan_loglevel '2'
 	option close_log_tcp '1'
@@ -15,6 +13,8 @@ config global
 	option custom_dns '127.0.0.1#5053'
 	option enabled '0'
 	option tcp_node 'nil'
+	option localhost_tcp_proxy_mode 'chnroute'
+	option localhost_udp_proxy_mode 'chnroute'
 
 config global_haproxy
 	option balancing_enable '0'
@@ -142,3 +142,4 @@ config subscribe_list
 	option enabled '1'
 	option remark 'FreeFQ-V2'
 	option url 'https://raw.fastgit.org/freefq/free/master/v2'
+
