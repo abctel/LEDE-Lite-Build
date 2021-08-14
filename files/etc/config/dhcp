@@ -17,7 +17,7 @@ config dnsmasq
 	option localuse '1'
 	list interface 'eth0'
 	option port '54'
-	list server '127.0.0.1'
+	list server '127.0.0.1#5053'
 
 config dhcp 'lan'
 	option interface 'lan'
