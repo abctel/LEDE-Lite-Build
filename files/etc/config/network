@@ -6,8 +6,8 @@ config interface 'loopback'
 	option netmask '255.0.0.0'
 
 config globals 'globals'
-	option ula_prefix ''
 	option packet_steering '1'
+	option ula_prefix 'fd53:df93:d7e1::/48'
 
 config interface 'lan'
 	option ifname 'eth0'
