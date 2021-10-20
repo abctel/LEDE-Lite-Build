@@ -15,9 +15,9 @@ config dnsmasq
 	option localservice '1'
 	option ednspacket_max '1232'
 	option localuse '1'
-	list interface 'br-lan'
-	option port '54'
 	list server '127.0.0.1#5053'
+	option port '54'
+	list interface 'br-lan'
 
 config dhcp 'lan'
 	option interface 'lan'
