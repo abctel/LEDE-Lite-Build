@@ -35,7 +35,7 @@ config server
 	option name 'CN-DNSPOD'
 	option ip '119.29.29.29'
 	option type 'udp'
-	option server_group 'bootstrap'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -44,7 +44,7 @@ config server
 	option name 'CN-ALI'
 	option ip '223.5.5.5'
 	option type 'udp'
-	option server_group 'bootstrap'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -53,7 +53,7 @@ config server
 	option name 'CN-114DNS'
 	option ip '114.114.114.114'
 	option type 'udp'
-	option server_group 'bootstrap'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -62,7 +62,7 @@ config server
 	option name 'CN-BAIDU'
 	option ip '180.76.76.76'
 	option type 'udp'
-	option server_group 'bootstrap'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -72,7 +72,7 @@ config server
 	option ip '101.6.6.6'
 	option port '5353'
 	option type 'udp'
-	option server_group 'bootstrap'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -82,7 +82,7 @@ config server
 	option ip '101.6.6.6'
 	option port '5353'
 	option type 'tcp'
-	option server_group 'bootstrap'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
