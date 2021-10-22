@@ -16,7 +16,7 @@ config smartdns
 	option seconddns_server_group 'NoChina'
 	option seconddns_no_dualstack_selection '1'
 	option redirect 'none'
-	option tcp_server '0'
+	option tcp_server '1'
 	option rr_ttl '3600'
 	option rr_ttl_min '2400'
 	option rr_ttl_max '86400'
