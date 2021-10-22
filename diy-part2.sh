@@ -22,3 +22,6 @@ git clone https://github.com/abctel/abctel-package package/abctel/dnsmasq-china-
 
 chmod 755 files/etc/init.d/smartdns
 chmod 755 files/usr/bin/AdGuardHome/AdGuardHome
+rm -rf feeds/packages/net/dnscrypt-proxy2
+git clone https://github.com/abctel/dnscrypt-proxy2 feeds/packages/net/dnscrypt-proxy2
+make defconfig
