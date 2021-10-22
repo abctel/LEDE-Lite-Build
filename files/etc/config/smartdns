@@ -35,7 +35,6 @@ config server
 	option name 'CN-DNSPOD'
 	option ip '119.29.29.29'
 	option type 'udp'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -44,7 +43,6 @@ config server
 	option name 'CN-ALI'
 	option ip '223.5.5.5'
 	option type 'udp'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -53,7 +51,6 @@ config server
 	option name 'CN-114DNS'
 	option ip '114.114.114.114'
 	option type 'udp'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -62,7 +59,6 @@ config server
 	option name 'CN-BAIDU'
 	option ip '180.76.76.76'
 	option type 'udp'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -72,7 +68,6 @@ config server
 	option ip '101.6.6.6'
 	option port '5353'
 	option type 'udp'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -82,7 +77,6 @@ config server
 	option ip '101.6.6.6'
 	option port '5353'
 	option type 'tcp'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
@@ -91,7 +85,6 @@ config server
 	option name 'CN-ADV ALI DOH'
 	option ip 'https://dns.alidns.com/dns-query'
 	option type 'https'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'dns.alidns.com'
 
@@ -100,7 +93,6 @@ config server
 	option name 'CN-ADV DNSPOD DOH'
 	option ip 'https://doh.pub/dns-query'
 	option type 'https'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'doh.pub'
 
@@ -109,7 +101,6 @@ config server
 	option name 'CN-ADV DNSPOD SM2 DOH'
 	option ip 'https://sm2.doh.pub/dns-query'
 	option type 'https'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'doh.pub'
 
@@ -118,7 +109,6 @@ config server
 	option name 'CN-ADV 360DNS DOH'
 	option ip 'https://doh.360.cn/dns-query'
 	option type 'https'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'doh.360.cn'
 
@@ -127,7 +117,6 @@ config server
 	option name 'CN-ADV ALI DOT'
 	option ip 'dns.alidns.com'
 	option type 'tls'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'dns.alidns.com'
 
@@ -136,7 +125,6 @@ config server
 	option name 'CN-ADV DNSPOD DOT'
 	option ip 'dot.pub'
 	option type 'tls'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'dot.pub'
 
@@ -145,7 +133,6 @@ config server
 	option name 'CN-ADV 360DNS DOT'
 	option ip 'dot.360.cn'
 	option type 'tls'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify 'dot.360.cn'
 
@@ -155,7 +142,6 @@ config server
 	option ip '101.6.6.6'
 	option port '8853'
 	option type 'tls'
-	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify '101.6.6.6'
 
