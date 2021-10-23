@@ -32,7 +32,7 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
-  - 127.0.0.1:54
+  - 127.0.0.1:5053
   upstream_dns_file: ""
   bootstrap_dns:
   - 1.1.1.1
