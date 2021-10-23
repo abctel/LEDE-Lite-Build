@@ -19,6 +19,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/abctel/openwrt-p
 git clone https://github.com/abctel/luci-theme-edge package/abctel/luci-theme-edge
 git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/abctel/luci-app-chinadns-ng
 git clone https://github.com/abctel/abctel-package package/abctel/dnsmasq-china-list
+git clone https://github.com/ITdesk01/jd_openwrt_script.git package/abctel/jd_openwrt_script
 
 chmod 755 files/etc/init.d/smartdns
 chmod 755 files/usr/bin/AdGuardHome/AdGuardHome
