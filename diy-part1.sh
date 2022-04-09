@@ -17,6 +17,6 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 #增加插件包
-#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-#sed -i '$a src-git kenzo https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/small-package' feeds.conf.default
 #sed -i '$a src-git abctel https://github.com/abctel/dnsmasq-china-list' feeds.conf.default
